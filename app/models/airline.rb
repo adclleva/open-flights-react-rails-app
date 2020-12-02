@@ -4,7 +4,7 @@ class Airline < ApplicationRecord
   before_create :slugify
   def slugify
     # parameterize lowercase and hyphens every word
-    self.sluf = name.parameterize 
+    self.slug = name.parameterize 
   end
 
   def avg_score
